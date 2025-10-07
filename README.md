@@ -39,9 +39,9 @@ The project is live at: [https://neuroflip.github.io/vanilla-implementation](htt
 ## Considerations
 
 1. the HTML is using semantic tags like main, section, article, details, summary, header, footer, etc
-2. the css is using flex and grid layouts for the main structure of the html content
+2. the css is using flex and grid layouts for the main structure of the html content. The burguer menu is implemented using grid layout to get the links in a second row.
 3. The header is fixed in position for usability
 4. there is only one breakpoint in mediaquery files to distinguish between small and biger screens
 5. the contact form has some client validation to check if the format is an email. This is just checking if the input text contains the '@' character, but it can be more complicated using a regular expression or other techniques. The HTML validation is set to novalidate (at the html form tag) to avoid the standard html messages and allow a custom error to be shown.
 6. The original SVG for the logo is tinted using a css filter for the smartphone burguer menu and for the footer. It is done this way to avoid to duplicate svg resources.
-
+7. The blue background of big images is implemented using the :before pseudo element to avoid a new div container at the markup.
