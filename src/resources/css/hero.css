@@ -56,7 +56,7 @@
   border: 3px solid var(--primary-color);
 }
 
-.section--hero .button.secondary:hover {
+.section--hero .button.clearGrey:hover {
   background-color: var(--background-color);
   color: var(--secondary-color);
   border: 3px solid var(--secondary-color);

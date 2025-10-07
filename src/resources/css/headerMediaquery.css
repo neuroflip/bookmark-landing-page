@@ -19,7 +19,7 @@
 
   header li button {
     margin: 0;
-    border: 0;
+    border: 3px solid var(--danger-color);
     background-color: var(--danger-color);
     width: auto;
   }

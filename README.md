@@ -44,3 +44,4 @@ The project is live at: [https://neuroflip.github.io/vanilla-implementation](htt
 4. there is only one breakpoint in mediaquery files to distinguish between small and biger screens
 5. the contact form has some client validation to check if the format is an email. This is just checking if the input text contains the '@' character, but it can be more complicated using a regular expression or other techniques. The HTML validation is set to novalidate (at the html form tag) to avoid the standard html messages and allow a custom error to be shown.
 6. The original SVG for the logo is tinted using a css filter for the smartphone burguer menu and for the footer. It is done this way to avoid to duplicate svg resources.
+

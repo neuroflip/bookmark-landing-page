@@ -44,12 +44,11 @@
 .tab__content.active button {
   margin-top: 4vh;
   margin-right: 100%;
-  min-width: 107px;
+  min-width: 115px;
 }
 
 .bottom--border {
   padding: 1.5rem 3rem;
-
 }
 
 .tab.active .bottom--border {

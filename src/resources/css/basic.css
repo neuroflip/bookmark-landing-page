@@ -18,7 +18,7 @@ a {
 }
 
 p {
-  color: #888;
+  color: var(--foreground-color);
   line-height: 25px;
   font-size: 1.2rem;
 }
@@ -30,7 +30,6 @@ h3 {
 button {
   font-size: 1.1rem;
   border-radius: 0.5rem;
-  border: 0px;
   padding: 15px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
 }
@@ -45,15 +44,18 @@ li {
 .button.primary {
   background-color: var(--primary-color);
   color: var(--background-color);
+  border: 3px solid var(--primary-color);
 }
 
-.button.secondary {
-  background-color: rgb(247 247 247);
-  color: rgb(90 92 107);
+.button.clearGrey {
+  background-color: var(--clear-grey-color);
+  color: black;
+  border: 3px solid var(--clear-grey-color);
 }
 
 .button.danger {
   background-color: var(--danger-color);
   color: var(--background-color);
+  border: 3px solid var(--danger-color);
 }
 
