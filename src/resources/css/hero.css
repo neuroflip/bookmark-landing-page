@@ -1,0 +1,70 @@
+@import './heroMediaquery.css';
+
+.section--hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10vw 0 15vw 10vw;
+}
+
+.hero__text {
+  margin-right: 6vw;
+}
+
+.section--hero h1 {
+  text-align: left;
+  margin-top: 5vw;
+}
+
+.section--hero p {
+  text-align: left;
+}
+
+.hero__image {
+  content: url(../img/illustration-hero.svg);
+  position: relative;
+  display: block;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  max-width: 80vw;
+}
+
+.hero__image--wrapper {
+  position: relative;
+}
+
+.hero__image--wrapper::before {
+  content: "";
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 77%;
+  height: 70%;
+  border-radius: 50% 0 0 50%;
+  z-index: 0;
+}
+
+.section--hero .button {
+  margin: 10px;
+}
+
+.section--hero .button.primary:hover {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+}
+
+.section--hero .button.secondary:hover {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  border: 3px solid var(--secondary-color);
+}
+
+.hero__buttons {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+

@@ -1,0 +1,46 @@
+@import './footerMediaquery.css';
+
+footer {
+  background-color: var(--secondary-color);
+}
+
+.navBar__footer ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0 55px;
+  padding: 15px;
+  gap: 40px;
+}
+
+.navBar__footer li {
+  text-align: center;
+  text-transform: uppercase;
+  margin: auto 0;
+  width: 100%;
+}
+
+.navBar__footer li:last-of-type {
+  margin-left: auto;
+  margin-right: 45px;
+}
+
+.navBar__footer li img {
+  margin: 15px;
+  cursor: pointer;
+}
+
+.navBar__footer--brand {
+  margin: 5vw;
+  filter: invert(91%) sepia(92%) saturate(2%) hue-rotate(100deg) brightness(107%) contrast(99%);
+}
+
+.navBar__footer .nohover img:hover {
+  filter: invert(91%) sepia(92%) saturate(2%) hue-rotate(100deg) brightness(107%) contrast(99%);
+}
+
+footer a:hover {
+  color: var(--danger-color);
+}
+
+
+
