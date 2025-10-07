@@ -7,6 +7,10 @@
     height: 55vh;
   }
 
+  .card {
+    align-self: start;
+  }
+
   .card--center {
     align-self: center;
   }

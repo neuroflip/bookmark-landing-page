@@ -19,7 +19,7 @@ a {
 
 p {
   color: var(--foreground-color);
-  line-height: 25px;
+  line-height: 2rem;
   font-size: 1.2rem;
 }
 
@@ -30,9 +30,10 @@ h3 {
 button {
   font-size: 1.1rem;
   border-radius: 0.5rem;
-  padding: 15px;
+  padding: 1rem;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
 }
+
 button:hover {
   cursor: pointer;
 }
