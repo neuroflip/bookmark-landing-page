@@ -1,32 +1,41 @@
 
+const ACTIVECLASS = 'active';
+let previousSelectedTabId = 'tab1';
 
-function getSelectedTabElementFromTarget(target) {
+const getSelectedTabElementFromTarget = (target) => {
   return target.classList.contains('tab') ? target : target.parentElement;
+}
+
+const getQuerySelectorForTabContent = (tabId) => {
+  return `div[data-forTab=${tabId}]`
+}
+
+const tabOnClickEventListener = (event) => {
+      const previousSelectedTab = document.getElementById(previousSelectedTabId);
+      const previousSelectedTabContent = document.querySelector(getQuerySelectorForTabContent(previousSelectedTabId));
+
+      const currentSelectedTab = getSelectedTabElementFromTarget(event.target);
+      const currentSelectedTabId = currentSelectedTab.getAttribute('id');
+      const currentSelectedTabContent = document.querySelector(getQuerySelectorForTabContent(currentSelectedTabId));
+      
+      const featuresImage = document.querySelector('.tabs__image');
+
+      previousSelectedTabContent.classList.remove(ACTIVECLASS);
+      previousSelectedTab.classList.remove(ACTIVECLASS);
+      featuresImage.classList.remove(previousSelectedTabId);
+
+      currentSelectedTabContent.classList.add(ACTIVECLASS);
+      currentSelectedTab.classList.add(ACTIVECLASS);
+      featuresImage.classList.add(currentSelectedTabId);
+
+      previousSelectedTabId = currentSelectedTabId;
 }
 
 const prepareTabEventListeners = () => {
   const tabs = document.querySelectorAll('.tab');
+
   tabs.forEach((tab) => {
-    tab.addEventListener('click', (event) => {
-      const selectedTab = getSelectedTabElementFromTarget(event.target);
-      const tabs = document.querySelectorAll('.tab');
-
-      tabs.forEach((tab) => {
-        const tabId = tab.getAttribute('id');
-        const tabContent = document.querySelector(`div[data-forTab=${tabId}]`);
-        const featuresImage = document.querySelector('.tabs__image');
-
-        if (selectedTab.id === tab.id) { 
-          tabContent.classList.add('active');
-          tab.classList.add('active');
-          featuresImage.classList.add(tabId);
-        } else {
-          tabContent.classList.remove('active');
-          tab.classList.remove('active');
-          featuresImage.classList.remove(tabId);
-        }
-      });
-    })
+    tab.addEventListener('click', tabOnClickEventListener)
   });
 }
 
