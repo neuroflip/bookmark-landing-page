@@ -2,6 +2,10 @@
 @import 'fonts.css';
 @import 'basicMediaquery.css';
 
+:root {
+  --border-radius: 0.5rem;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -38,7 +42,7 @@ h2 {
 button {
   font-family: var(--font-family);
   font-size: 1.1rem;
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius);
   padding: 1rem;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
 }

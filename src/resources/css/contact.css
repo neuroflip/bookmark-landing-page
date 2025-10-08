@@ -30,9 +30,9 @@
 
 .contact__form input {
   border: none;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   width: 50vw;
-  padding: 10px;
+  padding: 1rem;
   background-image: none;
 }
 
@@ -50,7 +50,7 @@
 
 .email__feedback {
   background-color: var(--danger-color);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
 }
 
 .email__feedback.valid {
