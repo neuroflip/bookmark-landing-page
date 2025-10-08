@@ -1,0 +1,72 @@
+@use '../variables' as globals;
+@use '../colors';
+@use '../fonts';
+
+body {
+  font-size: fonts.$font-size;
+  font-weight: 400;
+}
+
+body {
+  font-family: fonts.$font-family;;
+  line-height: fonts.$line-height;
+}
+
+main {
+  margin-top: 150px;
+}
+
+a {
+  color: colors.$background-color;
+  text-decoration: none;
+}
+
+p {
+  color: colors.$foreground-color;
+  margin: 2rem 0;
+}
+
+h1 {
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  font-family: fonts.$font-family;;
+  font-size: 1.1rem;
+  border-radius: globals.$border-radius;
+  padding: 1rem;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.button.primary {
+  background-color: colors.$primary-color;
+  color: colors.$background-color;
+  border: 3px solid colors.$primary-color;
+}
+
+.button.clearGrey {
+  background-color: colors.$clear-grey-color;
+  color: black;
+  border: 3px solid colors.$clear-grey-color;
+}
+
+.button.danger {
+  background-color: colors.$danger-color;
+  color: colors.$background-color;
+  border: 3px solid colors.$danger-color;
+}
+

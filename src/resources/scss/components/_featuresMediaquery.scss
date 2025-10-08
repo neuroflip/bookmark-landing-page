@@ -1,7 +1,9 @@
+@use '../colors';
 
 @media screen and (width >= 48em) {
   main .section--features > p {
-    width: 50vw;
+    width: 39vw;
+    text-align: center;
   }
 
   .section--features p {
@@ -15,7 +17,7 @@
 
   .section--features .tab {
     border-top: 0;
-    border-bottom: 1px solid var(--terciary-color)
+    border-bottom: 1px solid colors.$terciary-color
   }
 
   .tabs .tab.active .bottom--border {
@@ -33,7 +35,7 @@
 
   .tab__content.active {
     width: 50%;
-    margin: auto 10vw auto 0;
+    margin: auto 10vw auto 5vw;
   }
 
   .section--features .tabs__image--wrapper {

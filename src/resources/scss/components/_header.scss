@@ -1,7 +1,8 @@
-@import './headerMediaquery.css';
+@use '../variables' as globals;
+@use '../colors';
 
 header {
-  background-color: var(--secondary-color);
+  background-color: colors.$secondary-color;
   z-index: 10;
   width: 100vw;
   height: 100vh;
@@ -21,7 +22,7 @@ header ul {
 
 header li {
   border-top: 1px solid #4c526c;
-  color: var(--background-color);
+  color: colors.$background-color;
   padding: 20px 0;
   font-weight: 500;
   text-transform: uppercase;
@@ -31,10 +32,10 @@ header li {
 }
 
 header button {
-  border: 2px solid var(--background-color);
-  border-radius: var(--border-radius);
+  border: 2px solid colors.$background-color;
+  border-radius: globals.$border-radius;
   background-color: #313653;
-  color: var(--background-color);
+  color: colors.$background-color;
   padding: 15px;
   width: 16rem;
   
@@ -49,7 +50,7 @@ header button {
 }
 
 header.closed {
-  background-color: var(--background-color);
+  background-color: colors.$background-color;
   height: 120px;
 }
 
@@ -72,7 +73,7 @@ header {
 .logo {
   grid-column: 1/2;
   margin: 45px auto 45px 10vw;
-  content: url(../img/logo-bookmark.svg);
+  content: url(../../img/logo-bookmark.svg);
   filter: invert(91%) sepia(92%) saturate(2%) hue-rotate(100deg) brightness(107%) contrast(99%);
 }
 
@@ -80,7 +81,7 @@ header {
   grid-column: 4/4;
   margin: 50px 45px 45px auto;
   max-height: 15px;
-  content: url(../img/icon-close.svg);
+  content: url(../../img/icon-close.svg);
   cursor: pointer;
 }
 
@@ -90,7 +91,7 @@ header {
 }
 
 .closed .burguerMenu__icon {
-  content: url(../img/icon-hamburger.svg);
+  content: url(../../img/icon-hamburger.svg);
 }
 
 .social__row {

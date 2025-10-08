@@ -1,4 +1,4 @@
-@import './featuresMediaquery.css';
+@use '../colors';
 
 .section--features {
   text-align: center;
@@ -20,17 +20,17 @@
 .tab {
   cursor: pointer;
   font-size: 1.1rem;
-  color: var(--terciary-color);
-  border-top: 1px solid var(--terciary-color);
+  color: colors.$terciary-color;
+  border-top: 1px solid colors.$terciary-color;
   overflow: visible;
 }
 
 .tab:last-of-type {
-  border-bottom: 1px solid var(--terciary-color);
+  border-bottom: 1px solid colors.$terciary-color;
 }
 
 .tab:hover {
-  color: var(--danger-color);
+  color: colors.$danger-color;
 }
 
 .tab.active {
@@ -48,7 +48,7 @@
 }
 
 .tab.active .bottom--border {
-  border-bottom: 4px solid var(--danger-color);
+  border-bottom: 4px solid colors.$danger-color;
   width: 51%;
   margin: 0 auto;
 }
@@ -72,6 +72,9 @@
   position: relative;
   display: block;
   z-index: 1;
+  height: auto;
+  width: 85%;
+  margin: 0 auto 0 10vw;
 }
 
 .tabs__image--wrapper {
@@ -80,7 +83,7 @@
 
 .tabs__image--wrapper::before {
   content: "";
-  background-color: var(--primary-color);
+  background-color: colors.$primary-color;
   position: absolute;
   bottom: -90px;
   left: 0px;
@@ -91,25 +94,18 @@
 }
 
 .tabs__image.tab1 {
-  content: url(../img/illustration-features-tab-1.svg);
+  content: url(../../img/illustration-features-tab-1.svg);
 }
 
 .tabs__image.tab2 {
-  content: url(../img/illustration-features-tab-2.svg);
+  content: url(../../img/illustration-features-tab-2.svg);
 }
 
 .tabs__image.tab3 {
-  content: url(../img/illustration-features-tab-3.svg);
+  content: url(../../img/illustration-features-tab-3.svg);
 }
-
-.tabs__image {
-  height: auto;
-  width: 85%;
-  margin: 0 auto;
-}
-
 .button:hover {
-  background-color: var(--background-color);
-  border: 3px solid var(--primary-color);
-  color: var(--primary-color);
+  background-color: colors.$background-color;
+  border: 3px solid colors.$primary-color;
+  color: colors.$primary-color;
 }

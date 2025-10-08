@@ -1,11 +1,12 @@
-@import './footerMediaquery.css';
+@use '../colors';
 
 footer {
-  background-color: var(--secondary-color);
+  background-color: colors.$secondary-color;
 }
 
 footer h1 {
   line-height: 1rem;
+  margin: 0;
 }
 
 .navBar__footer ul {
@@ -43,7 +44,7 @@ footer h1 {
 }
 
 footer a:hover {
-  color: var(--danger-color);
+  color: colors.$danger-color;
 }
 
 

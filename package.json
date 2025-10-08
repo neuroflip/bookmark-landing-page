@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/neuroflip/bookmark-landing-page#readme",
   "devDependencies": {
+    "sass": "^1.93.2",
     "vite": "^7.1.7"
   }
 }

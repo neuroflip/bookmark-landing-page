@@ -1,0 +1,24 @@
+@use './reset';
+@use './components/basic';
+@use './components/basicMediaquery';
+
+@use './components/hero';
+@use './components/heroMediaquery';
+
+@use './components/contact';
+@use './components/contactMediaquery';
+
+@use './components/extensions';
+@use './components/extensionsMediquery';
+
+@use './components/faq';
+@use './components/faqMediaquery';
+
+@use './components/features';
+@use './components/featuresMediaquery';
+
+@use './components/footer';
+@use './components/footerMediaquery';
+
+@use './components/header';
+@use './components/headerMediaquery';

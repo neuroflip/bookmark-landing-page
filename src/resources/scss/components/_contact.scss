@@ -1,4 +1,5 @@
-@import './contactMediaquery.css';
+@use '../variables' as globals;
+@use '../colors';
 
 .section--contact {
   width: 100vw;
@@ -7,8 +8,8 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: var(--primary-color);
-  color: var(--background-color);
+  background-color: colors.$primary-color;
+  color: colors.$background-color;
 }
 
 .section--contact button {
@@ -17,9 +18,9 @@
 }
 
 .section--contact button:hover {
-  background-color: var(--background-color);
-  border: 3px solid var(--danger-color);
-  color: var(--danger-color);
+  background-color: colors.$background-color;
+  border: 3px solid colors.$danger-color;
+  color: colors.$danger-color;
 }
 
 .contact__form {
@@ -30,7 +31,7 @@
 
 .contact__form input {
   border: none;
-  border-radius: var(--border-radius);
+  border-radius: globals.$border-radius;
   width: 50vw;
   padding: 1rem;
   background-image: none;
@@ -41,7 +42,7 @@
 }
 
 .contact__form input:invalid {
-  background-image: url(../img/icon-error.svg);
+  background-image: url(../../img/icon-error.svg);
   background-size: 20px;
   background-repeat: no-repeat;
   background-origin: content-box;
@@ -49,8 +50,8 @@
 }
 
 .email__feedback {
-  background-color: var(--danger-color);
-  border-radius: var(--border-radius);
+  background-color: colors.$danger-color;
+  border-radius: globals.$border-radius;
 }
 
 .email__feedback.valid {
