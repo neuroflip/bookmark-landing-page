@@ -4,10 +4,6 @@
   text-align: center;
 }
 
-.section--features p {
-  text-align: left;
-}
-
 .section--features > p {
   text-align: center;
   width: 80vw;
@@ -43,7 +39,7 @@
 
 .tab__content.active button {
   margin-top: 4vh;
-  margin-right: 100%;
+  margin-right: 0;
   min-width: 115px;
 }
 

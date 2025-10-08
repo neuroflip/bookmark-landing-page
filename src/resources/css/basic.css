@@ -1,5 +1,6 @@
 @import 'colors.css';
 @import 'fonts.css';
+@import 'basicMediaquery.css';
 
 body {
   margin: 0;
@@ -24,7 +25,10 @@ a {
 
 p {
   color: var(--foreground-color);
-  font-size: 1.2rem;
+}
+
+h1 {
+  line-height: 3rem;
 }
 
 h3 {

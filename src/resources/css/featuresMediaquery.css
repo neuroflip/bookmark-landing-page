@@ -4,6 +4,11 @@
     width: 50vw;
   }
 
+  .section--features p {
+    text-align: left;
+  }
+
+
   .section--features .tabs {
     flex-direction: row;
   }
@@ -34,5 +39,9 @@
   .section--features .tabs__image--wrapper {
     width: 50%;
     height: 50%;
+  }
+
+  .section--features .tab__content.active button {
+    margin-right: 100%;
   }
 }
