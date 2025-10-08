@@ -4,6 +4,10 @@ footer {
   background-color: var(--secondary-color);
 }
 
+footer h1 {
+  line-height: 1rem;
+}
+
 .navBar__footer ul {
   display: flex;
   flex-direction: column;
