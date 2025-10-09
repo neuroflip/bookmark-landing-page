@@ -16,6 +16,7 @@
 
       .tab.active .bottom--border {
         margin: 0;
+        width: 100%;
       }
     }
 
@@ -32,12 +33,17 @@
       }
     }
 
-    .tab__content.active {
-      width: 50%;
-      margin: auto 10vw auto 5vw;
+    .tab__content {
+      &.active {
+        width: 50%;
+        margin: auto 10vw auto 5vw;
 
-      button {
-        margin-right: 100%;
+        button {
+          margin-right: 100%;
+        }
+      }
+      &[data-forTab="tab1"] button {
+        display: block;
       }
     }
 

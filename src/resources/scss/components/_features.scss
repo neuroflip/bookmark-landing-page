@@ -41,6 +41,7 @@
     .bottom--border {
       border-bottom: 4px solid colors.$danger-color;
       margin: 0 auto;
+      width: 88%;
     }
   }
 }
@@ -48,6 +49,10 @@
 .tab__content {
   display: none;
   margin: 10vh 10vw 8vh 10vw;
+
+  &[data-forTab="tab1"] button {
+    display: none;
+  }
 
   &.active {
     display: block;
