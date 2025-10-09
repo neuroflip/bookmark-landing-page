@@ -7,7 +7,17 @@ The project is a vite project with no other dependency.
 
 ## Description
 
-This repository includes the implementation of the Level 1 for the Sprint 1 in Vanilla Js and css. The code is structured as follows:
+This repository includes the implementation of the Level 1 for the Sprint 1 in Vanilla Js and css.
+
+## Branches
+
+| LEVEL | Code | branch |
+| -------- | -------- | --------  |
+| Level 1 | Vanilla JS, Vanilla Css | [feature/vanilla-implementation](https://github.com/neuroflip/bookmark-landing-page/tree/feature/vanilla-implementation) |
+| Level 2 | Vanilla JS, Sass | [feature/sass-implementation](https://github.com/neuroflip/bookmark-landing-page/tree/feature/sass-implementation)
+| Level 3 | Vanilla JS, Tailwind | [feature/tailwind-implementation](https://github.com/neuroflip/bookmark-landing-page/tree/feature/tailwind-implementation)
+
+The code is structured as follows:
 
 ### Project structure
 
@@ -25,9 +35,12 @@ This repository includes the implementation of the Level 1 for the Sprint 1 in V
 ## Instalation and Running the project
 
 - Clone the repository https://github.com/neuroflip/bookmark-landing-page
-`npm install`
-`npm run build`
-`npm run preview`
+````
+git checkout feature/vanilla-implementation
+npm install
+npm run build
+npm run preview
+````
 
 Or run it in dev mode using:
 `npm run dev`
@@ -42,7 +55,7 @@ The project is live at: [https://neuroflip.github.io/vanilla-implementation](htt
 2. the css is using flex and grid layouts for the main structure of the html content. The burguer menu is implemented using grid layout to get the links in a second row.
 3. The header is fixed in position for usability
 4. there is only one breakpoint in mediaquery files to distinguish between small and biger screens
-5. the contact form has some client validation to check if the format is an email. This is just checking if the input text contains the '@' character, but it can be more complicated using a regular expression or other techniques. The HTML validation is set to novalidate (at the html form tag) to avoid the standard html messages and allow a custom error to be shown.
+5. the contact form has some client validation to check if the format is an email. It is implemented using a regular expression to check githe email. The HTML validation is set to novalidate (at the html form tag) to avoid the standard html messages and allow a custom error to be shown.
 6. The original SVG for the logo is tinted using a css filter for the smartphone burguer menu and for the footer. It is done this way to avoid to duplicate svg resources.
 7. The blue background of big images is implemented using the :before pseudo element to avoid a new div container at the markup.
 8. WCAG Accesibility check using [https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh](https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh). There are still some errors and warnings because: form does not have a label for the email input (there is no label at the original design) and some Very low contrast between text and background colors errors (caused by the original design too).
