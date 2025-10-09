@@ -1,0 +1,47 @@
+
+@media screen and (width >= 48em) {
+  main .section--features > p {
+    width: 50vw;
+  }
+
+  .section--features p {
+    text-align: left;
+  }
+
+
+  .section--features .tabs {
+    flex-direction: row;
+  }
+
+  .section--features .tab {
+    border-top: 0;
+    border-bottom: 1px solid var(--terciary-color)
+  }
+
+  .tabs .tab.active .bottom--border {
+    width: auto;
+    margin: 0;
+  }
+
+  .section--features .tabs__content h1 {
+    text-align: left;
+  }
+
+  .section--features .tabs__content {
+    flex-direction: row;
+  }
+
+  .tab__content.active {
+    width: 50%;
+    margin: auto 10vw auto 0;
+  }
+
+  .section--features .tabs__image--wrapper {
+    width: 50%;
+    height: 50%;
+  }
+
+  .section--features .tab__content.active button {
+    margin-right: 100%;
+  }
+}

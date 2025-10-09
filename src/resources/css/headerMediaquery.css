@@ -1,0 +1,48 @@
+@media screen and (width >= 48em) {
+  header.closed #navBar ul {
+    display: flex;
+    flex-direction: row;
+    margin: 33px 10vw;
+    justify-content: end;
+  }
+
+  header #navBar {
+    grid-column: 3 / 5;
+    grid-row: initial;
+  }
+
+  header ul li {
+    border-top: 0;
+    margin: auto 20px;
+    padding: 0;
+  }
+
+  header li button {
+    margin: 0;
+    border: 3px solid var(--danger-color);
+    background-color: var(--danger-color);
+    width: auto;
+  }
+
+  header li button:hover {
+    background-color: var(--background-color);
+    color: var(--danger-color);
+    border: 3px solid var(--danger-color);
+  }
+
+  header ul li a { 
+    color: black;
+  }
+
+  #burguerMenu__icon {
+    display: none;
+  }
+
+  header .social__row {
+    display: none;
+  }
+
+  header .logo {
+    margin: 45px auto 45px 10vw;
+  }
+}

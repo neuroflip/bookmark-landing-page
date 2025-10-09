@@ -1,0 +1,40 @@
+@import './extensionsMediquery.css';
+
+.section--extensions {
+  text-align: center;
+  margin: 15vh 6vw 25vh 6vw;
+}
+
+.card__container {
+  display: flex;
+  gap: 3vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: 300px;
+  max-height: 450px;
+  border-radius: var(--border-radius);
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.browserLogo {
+  margin-top: 7vh;
+  height: auto;
+  max-width: 50vw;
+}
+
+.dotLine {
+  max-width: 100%;
+  height: auto;
+}
+
+.card .button {
+  margin: 3vh;
+  font-size: 1.0rem;
+}
+
+
+
