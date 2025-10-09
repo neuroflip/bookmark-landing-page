@@ -1,12 +1,14 @@
 @media screen and (width >= 48em) {
-  .section--extensions .extensions__text {
-    margin: 0 20vw 5vh 20vw;
+  .section--extensions {
+    .extensions__text {
+      margin: 0 20vw 5vh 20vw;
+    }
+    .card__container {
+      flex-direction: row;
+      height: 55vh;
+    }
   }
-  .section--extensions .card__container {
-    flex-direction: row;
-    height: 55vh;
-  }
-
+  
   .card {
     align-self: start;
   }

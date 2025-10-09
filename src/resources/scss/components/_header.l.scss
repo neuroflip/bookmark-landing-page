@@ -1,0 +1,47 @@
+@use './mixins/button';
+@use '../variables' as globals;
+@use '../colors';
+
+@media screen and (width >= 48em) {
+  header {
+    &.closed #navBar ul {
+      display: flex;
+      flex-direction: row;
+      margin: 33px globals.$main-right-margin;
+      justify-content: end;
+    }
+
+    #navBar {
+      grid-column: 3 / 5;
+      grid-row: initial;
+    }
+
+    ul li {
+      border-top: 0;
+      margin: auto 20px;
+      padding: 0;
+    }
+
+    li button {
+      @include button.colored(colors.$danger-color, colors.$background-color, colors.$danger-color);
+      margin: 0;
+      width: auto;
+    }
+
+    li button:hover {
+      @include button.colored(colors.$background-color, colors.$danger-color, colors.$danger-color)
+    }
+
+    ul li a { 
+      color: black;
+    }
+
+        .social__row {
+      display: none;
+    }
+  }
+  
+  #burguerMenu__icon {
+    display: none;
+  }
+}

@@ -1,19 +1,20 @@
+@use './extensions.l';
 @use '../variables' as globals;
 
 .section--extensions {
   text-align: center;
-  margin: 15vh 6vw 25vh 6vw;
-}
+  margin: 15vh globals.$main-right-margin 25vh globals.$main-left-margin;
 
-.section--extensions h1 {
-  margin-top: 16vw;
-}
-.section--extensions h2 {
-  margin: 2rem 0 0 0;
-}
+  h1 {
+    margin-top: 16vw;
+  }
+  h2 {
+    margin: 2rem 0 0 0;
+  }
 
-.section--extensions p {
-  margin: 0 0 1.5rem 0;
+  p {
+    margin: 0 0 1.5rem 0;
+  }
 }
 
 .card__container {
@@ -28,7 +29,12 @@
   max-width: 300px;
   max-height: 450px;
   border-radius: globals.$border-radius;
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: globals.$box-shadow;
+
+  .button {
+    margin: 1.5rem;
+    font-size: 1.0rem;
+  }
 }
 
 .browserLogo {
@@ -41,11 +47,5 @@
   max-width: 100%;
   height: auto;
 }
-
-.card .button {
-  margin: 1.5rem;
-  font-size: 1.0rem;
-}
-
 
 

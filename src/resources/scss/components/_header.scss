@@ -1,3 +1,5 @@
+@use './header.l';
+@use './mixins/button';
 @use '../variables' as globals;
 @use '../colors';
 
@@ -9,60 +11,51 @@ header {
   position: fixed;
   left: 0;
   top: 0;
-}
-
-header h1 {
-  line-height: 1rem;
-}
-
-header ul {
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-header li {
-  border-top: 1px solid #4c526c;
-  color: colors.$background-color;
-  padding: 20px 0;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-  font-size: 1rem;
-}
-
-header button {
-  border: 2px solid colors.$background-color;
-  border-radius: globals.$border-radius;
-  background-color: #313653;
-  color: colors.$background-color;
-  padding: 15px;
-  width: 16rem;
-  
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 1rem;
-}
-
-.closed ul {
-  display: none;
-}
-
-header.closed {
-  background-color: colors.$background-color;
-  height: 120px;
-}
-
-header.closed ul {
-  display: none;
-}
-
-header {
   display: grid;
   justify-content: center;
   grid-template-columns: 25% 10% 25% 40%;
   grid-template-rows: 120px auto;
+
+  &.closed {
+    background-color: colors.$background-color;
+    height: 120px;
+  }
+
+  &.closed ul {
+    display: none;
+  }
+
+  h1 {
+    line-height: 1rem;
+  }
+
+  ul {
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  li {
+    border-top: 1px solid #4c526c;
+    color: colors.$background-color;
+    padding: 20px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  button {
+    @include button.colored(#313653, colors.$background-color, colors.$background-color);
+    border-radius: globals.$border-radius;
+    padding: 15px;
+    width: 16rem;
+    
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1rem;
+  }
 }
 
 #navBar {
@@ -72,7 +65,7 @@ header {
 
 .logo {
   grid-column: 1/2;
-  margin: 45px auto 45px 10vw;
+  margin: 45px auto 45px globals.$main-left-margin;
   content: url(../../img/logo-bookmark.svg);
   filter: invert(91%) sepia(92%) saturate(2%) hue-rotate(100deg) brightness(107%) contrast(99%);
 }
@@ -85,13 +78,18 @@ header {
   cursor: pointer;
 }
 
+.closed {
+  .logo {
+    filter: none;
+  }
 
-.closed .logo {
-  filter: none;
-}
+  .burguerMenu__icon {
+    content: url(../../img/icon-hamburger.svg);
+  }
 
-.closed .burguerMenu__icon {
-  content: url(../../img/icon-hamburger.svg);
+  ul {
+    display: none;
+  }
 }
 
 .social__row {
@@ -102,9 +100,10 @@ header {
   left: 0;
   width: 100%;
   border-top: 0;
+
+  img {
+    margin: 15px;
+  }
 }
 
-.social__row img {
-  margin: 15px;
-}
 

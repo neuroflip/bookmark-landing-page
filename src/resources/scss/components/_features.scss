@@ -1,20 +1,23 @@
+@use './features.l';
+@use '../variables' as globals;
+@use './mixins/button';
 @use '../colors';
 
 .section--features {
   text-align: center;
-}
-
-.section--features > p {
-  text-align: center;
-  width: 80vw;
-  margin: 0 auto;
+  
+  & > p {
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+  }
 }
 
 .tabs {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 6vh 6vw;
+  margin: 6vh globals.$main-left-margin;
 }
 
 .tab {
@@ -23,49 +26,48 @@
   color: colors.$terciary-color;
   border-top: 1px solid colors.$terciary-color;
   overflow: visible;
+
+  &:last-of-type {
+    border-bottom: 1px solid colors.$terciary-color;
+  }
+
+  &:hover {
+    color: colors.$danger-color;
+  }
+
+  &.active {
+    color: black;
+
+    .bottom--border {
+      border-bottom: 4px solid colors.$danger-color;
+      margin: 0 auto;
+    }
+  }
 }
 
-.tab:last-of-type {
-  border-bottom: 1px solid colors.$terciary-color;
-}
+.tab__content {
+  display: none;
+  margin: 10vh 10vw 8vh 10vw;
 
-.tab:hover {
-  color: colors.$danger-color;
-}
+  &.active {
+    display: block;
 
-.tab.active {
-  color: black;
-}
-
-.tab__content.active button {
-  margin-top: 4vh;
-  margin-right: 0;
-  min-width: 115px;
+    button {
+      margin-top: 4vh;
+      margin-right: 0;
+      min-width: 115px;
+    }
+  }
 }
 
 .bottom--border {
-  padding: 1.5rem 3rem;
-}
-
-.tab.active .bottom--border {
-  border-bottom: 4px solid colors.$danger-color;
-  width: 51%;
-  margin: 0 auto;
+  padding: 1rem 3rem;
 }
 
 .tabs__content {
   display: flex;
   flex-direction: column;
   gap: 7vw;
-}
-
-.tab__content {
-  display: none;
-  margin: 10vh 10vw 8vh 10vw;
-}
-
-.tab__content.active {
-  display: block;
 }
 
 .tabs__image {
@@ -75,37 +77,36 @@
   height: auto;
   width: 85%;
   margin: 0 auto 0 10vw;
+
+  &.tab1 {
+    content: url(../../img/illustration-features-tab-1.svg);
+  }
+
+  &.tab2 {
+    content: url(../../img/illustration-features-tab-2.svg);
+  }
+
+  &.tab3 {
+    content: url(../../img/illustration-features-tab-3.svg);
+  }
 }
 
 .tabs__image--wrapper {
   position: relative;
+
+  &::before {
+    content: "";
+    background-color: colors.$primary-color;
+    position: absolute;
+    bottom: -90px;
+    left: 0px;
+    width: 77%;
+    height: 100%;
+    border-radius: 0 50% 50% 0;
+    z-index: 0;
+  }
 }
 
-.tabs__image--wrapper::before {
-  content: "";
-  background-color: colors.$primary-color;
-  position: absolute;
-  bottom: -90px;
-  left: 0px;
-  width: 77%;
-  height: 100%;
-  border-radius: 0 50% 50% 0;
-  z-index: 0;
-}
-
-.tabs__image.tab1 {
-  content: url(../../img/illustration-features-tab-1.svg);
-}
-
-.tabs__image.tab2 {
-  content: url(../../img/illustration-features-tab-2.svg);
-}
-
-.tabs__image.tab3 {
-  content: url(../../img/illustration-features-tab-3.svg);
-}
 .button:hover {
-  background-color: colors.$background-color;
-  border: 3px solid colors.$primary-color;
-  color: colors.$primary-color;
+  @include button.colored(colors.$background-color, colors.$primary-color, colors.$primary-color);
 }
