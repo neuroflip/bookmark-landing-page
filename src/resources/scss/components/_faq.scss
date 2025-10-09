@@ -1,0 +1,58 @@
+@use './faq.l';
+@use '../colors';
+
+.section--faq {
+  text-align: center;
+  margin: 0 auto 25vw auto;
+  max-width: 80vw;
+
+  button {
+    margin-top: 5vw;
+  }
+}
+
+
+details {
+  border-bottom: 1px solid colors.$terciary-color;
+  &:first-of-type {
+    border-top: 1px solid colors.$terciary-color;
+  }
+
+  img {
+    transform: rotateZ(0deg);
+    transition-duration: 0.3s;
+  }
+
+  h2 {
+    margin: 1.3rem 0;
+  }
+
+  p {
+    text-align: left;
+  }
+}
+
+details[open] img {
+  transform: rotateZ(180deg);
+  filter: invert(10%) sepia(80%) saturate(200%) hue-rotate(-10deg) brightness(110%) contrast(110%);
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 100%;
+  gap: 20px;
+  text-align: left;
+
+  &:hover {
+    color: colors.$danger-color;
+  }
+
+  img {
+    width: 18px;
+    height: 12px;
+    margin: auto 0;
+  }
+}
+

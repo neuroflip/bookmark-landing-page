@@ -1,0 +1,60 @@
+@use '../variables' as globals;
+@use './hero.l';
+@use '../colors';
+
+.section--hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 13vw 0 15vw globals.$main-left-margin;
+
+  h1 {
+    text-align: left;
+    margin-top: 5vw;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  .button {
+    margin: 10px;
+  }
+}
+
+.hero__text {
+  margin-right: 6vw;
+}
+
+.hero__image {
+  content: url(../../img/illustration-hero.svg);
+  position: relative;
+  display: block;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  max-width: 80vw;
+}
+
+.hero__image--wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: colors.$primary-color;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 77%;
+    height: 70%;
+    border-radius: 50% 0 0 50%;
+    z-index: 0;
+  }
+}
+
+.hero__buttons {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+

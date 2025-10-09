@@ -1,0 +1,53 @@
+@use './footer.l';
+@use '../colors';
+
+footer {
+  background-color: colors.$secondary-color;
+
+  h1 {
+    line-height: 1rem;
+    margin: 0;
+  }
+
+  a:hover {
+    color: colors.$danger-color;
+  }
+}
+
+.navBar__footer {
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 55px;
+    padding: 15px;
+    gap: 40px;
+  }
+
+  li {
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto 0;
+    width: 100%;
+  }
+
+  li:last-of-type {
+    margin-left: auto;
+    margin-right: 45px;
+  }
+
+  li img {
+    margin: 15px;
+    cursor: pointer;
+  }
+
+  .nohover img:hover {
+    filter: invert(91%) sepia(92%) saturate(2%) hue-rotate(100deg) brightness(107%) contrast(99%);
+  }
+}
+
+.navBar__footer--brand {
+  margin: 5vw;
+  filter: invert(91%) sepia(92%) saturate(2%) hue-rotate(100deg) brightness(107%) contrast(99%);
+}
+
+

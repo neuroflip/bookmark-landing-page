@@ -1,0 +1,55 @@
+@use '../colors';
+
+@media screen and (width >= 48em) {
+  main .section--features > p {
+    width: 39vw;
+    text-align: center;
+  }
+
+  .section--features {
+    p {
+      text-align: left;
+    }
+
+    .tabs {
+      flex-direction: row;
+
+      .tab.active .bottom--border {
+        margin: 0;
+        width: 100%;
+      }
+    }
+
+    .tab {
+      border-top: 0;
+      border-bottom: 1px solid colors.$terciary-color
+    }
+
+    .tabs__content {
+      flex-direction: row;
+
+      h1 {
+        text-align: left;
+      }
+    }
+
+    .tab__content {
+      &.active {
+        width: 50%;
+        margin: auto 10vw auto 5vw;
+
+        button {
+          margin-right: 100%;
+        }
+      }
+      &[data-forTab="tab1"] button {
+        display: block;
+      }
+    }
+
+    .tabs__image--wrapper {
+      width: 50%;
+      height: 50%;
+    }
+  }
+}

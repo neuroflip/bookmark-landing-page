@@ -1,0 +1,27 @@
+@use '../variables' as globals;
+
+@media screen and (width >= 48em) {
+  main .section--hero {
+    flex-direction: row;
+  }
+
+  .hero__image {
+    right: calc(globals.$main-right-margin / 2);
+  }
+
+  .hero__image--wrapper {
+    order: 2;
+    width: 50%;
+    height: 50%;
+  }
+
+  .hero__text {
+    flex: column;
+    width: 50%;
+    height: 50%;
+  }
+
+  .section--hero h1 {
+    font-size: 3rem;
+  }
+}

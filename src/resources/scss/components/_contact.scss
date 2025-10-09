@@ -1,0 +1,83 @@
+@use './contact.l';
+@use './mixins/button';
+@use '../variables' as globals;
+@use '../colors';
+
+.section--contact {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 10vw globals.$main-left-margin;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: colors.$primary-color;
+  color: colors.$background-color;
+
+  h2 {
+    margin: auto auto 1vh auto;
+    font-size: 0.8rem;
+    letter-spacing: 0.3rem;
+  }
+
+  button {
+    padding: 10px;
+    min-width: 120px;
+    margin-top: 1rem;
+  }
+
+  button:hover {
+    @include button.colored(colors.$background-color, colors.$danger-color, colors.$danger-color);
+  }
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    border: none;
+    border-radius: globals.$border-radius;
+    padding: 1rem;
+    background-image: none;
+    width: 100%;
+  }
+
+  input:valid { 
+    background-image: none;
+  }
+
+  input:invalid {
+    background-image: url(../../img/icon-error.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: right;
+  }
+}
+
+
+.email__feedback {
+  width: 100%;
+  background-color: colors.$danger-color;
+  border-radius: globals.$border-radius;
+
+  &.valid {
+    display: block;
+    background-color: inherit;
+  }
+
+  &.valid .email--invalid{
+    display: none;
+  }
+}
+
+.email--invalid {
+  font-size: 0.7em;
+  font-style: italic;
+  text-align: left;
+  margin: 2px;
+}
+
+.email:focus {
+  border: none;
+}

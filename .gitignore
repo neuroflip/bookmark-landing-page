@@ -1,0 +1,5 @@
+dist/
+starter-code/
+
+.DS_Store
+node_modules
