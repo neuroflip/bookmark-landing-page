@@ -1,0 +1,8 @@
+@layer components {
+  header ul li {
+    @apply border-t-1 border-t-(--color-foreground);
+    @apply text-(--color-background) font-medium uppercase tracking-normal text-center text-base;
+    @apply py-6 px-0 w-[80%] m-auto;
+    @apply md:border-t-0;
+  }
+}

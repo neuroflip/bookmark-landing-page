@@ -5,35 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bookmark Landing Page</title>
   <link rel="icon" type="image/x-icon" href="./src/resources//img/favicon-32x32.png">
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  
+
+  <link rel="stylesheet" href="./output.css" />
+
   <script defer src="./src/js/main.js" type="module"></script>
 </head>
 
 <body>
-  <header id="menu" class="closed">
-    <a class="logo" href="/">
-      <h1><img alt="Logo Bookmark" /></h1>
+  <header id="menu" class="group closed [&.closed]:bg-(--color-background) [&.closed]:h-[120px] md:[&.closed]:w-[100%]
+   bg-(--color-secondary) z-10 w-[100%] h-[100%] fixed left-0 top-0 grid justify-center grid-cols-[25%_10%_25%_40%] grid-rows-[120px_auto]">
+    <a class="col-start-1 col-end-2 filter-(--filter-logo) mt-[1.8] mr-auto mb-[1.8] ml-(--main-left-margin) group-[.closed]:filter-none" href="/">
+      <h1 class="mr-auto my-13 w-50 text-1/1"><img src="./src/resources/img/logo-bookmark.svg" alt="Logo Bookmark" /></h1>
     </a>
-    <nav id="navBar">
-      <ul>
-        <li><a href="#features">features</a></li>
-        <li><a href="/pricing">pricing</a></li>
-        <li><a href="#contact">contact</a></li>
-        <li><button class="button">login</button></li>
-        <li class="social__row">
-          <img src="./src/resources/img/icon-facebook.svg" alt="Facebook logo icon" />
-          <img src="./src/resources/img/icon-twitter.svg" alt="Twitter logo icon" />
+    <nav id="navBar" class="h-[120px] row-start-2 row-end-2 col-start-1 col-end-5 md:col-start-3 md:col-end-5 md:row-start-[initial] md:row-end-[initial]">
+      <ul class="group-[.closed]:hidden md:h-[100%] md:mt-auto md:mb-auto md:group-[.closed]:flex md:group-[.closed]:flex-row md:group-[.closed]:mt-2 md:group-[.closed]:mb-2 md:group-[.closed]:mr-(--main-right-margin) md:group-[.closed]:ml-(--main-left-margin) md:group-[.closed]ml-:(--main-left-margin) md:justify-end justify-center my-0 mx-auto py-0 px-0">
+        
+        <li class="md:bt-0 md:p-0 md:mt-auto md:mb-auto md:ml-1 md:mr-1">
+          <a class="md:text-black" href="#features">features</a>
         </li>
+        <li class="md:bt-0 md:p-0 md:mt-auto md:mb-auto md:ml-1 md:mr-1">
+          <a class="md:text-black" href="/pricing">pricing</a>
+        </li>
+        <li class="md:bt-0 md:p-0 md:mt-auto md:mb-auto md:ml-1 md:mr-1">
+          <a class="md:text-black" href="#contact">contact</a>
+        </li>
+        <li class="md:bt-0 md:p-0 md:mt-auto md:mb-auto md:ml-1 md:mr-1">
+          <button class="button p-5 border-3 border-(--color-background) w-3xs font-medium uppercase rounded-xl tracking-normal text-center md:w-auto md:m-0 md:bg-(--color-danger) md:text-(--color-background) md:bg-(--color-danger) md:hover:bg-(--color-background) md:hover:text-(--color-danger) md:hover:border-(--color-danger)">login</button>
+        </li>
+        <li class="md:hidden flex border-t-0 justify-center absolute bottom-0 left-0 w-100 borter-t-0">
+          <img class="m-1" src="./src/resources/img/icon-facebook.svg" alt="Facebook logo icon" />
+          <img class="m-1" src="./src/resources/img/icon-twitter.svg" alt="Twitter logo icon" />
+        </li>
+
       </ul>
     </nav>
-    <img id="burguerMenu__icon" class="burguerMenu__icon" alt="Icon Menu" />  
+    <img id="burguerMenu__icon" src="./src/resources/img/icon-close.svg" class="col-start-4 col-end-4 mt-14 mb-14 mr-(--main-right-margin) ml-[50%] cursor-pointer group-[.closed]:content-[url(./src/resources/img/icon-hamburger.svg)] md:hidden" alt="Icon Menu" />
   </header>
 
-  <main>
+  <main class="mt-[150px]">
     <section class="section--hero">
         <div class="hero__image--wrapper">
           <img class="hero__image" alt="Window app sketch" />

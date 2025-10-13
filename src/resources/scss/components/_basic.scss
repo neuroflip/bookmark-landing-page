@@ -4,17 +4,6 @@
 @use '../colors';
 @use '../fonts';
 
-body {
-  font-family: fonts.$font-family;
-  line-height: fonts.$line-height;
-  font-size: fonts.$font-size;
-  font-weight: 400;
-}
-
-main {
-  margin-top: 150px;
-}
-
 a {
   color: colors.$background-color;
   text-decoration: none;

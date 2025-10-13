@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #5365e2;
+  --color-secondary: #313653;
+  --terciary-color: #ccc;
+  --clear-grey-color: #f7f7f7;
+  --danger-color: #fc5959;
+  --background-color: #fff;
+  --foreground-color: #888;
+}
+
+
+
+
+/*@use './reset';
+@use './components/basic';
+@use './components/hero';
+@use './components/contact';
+@use './components/extensions';
+@use './components/faq';
+@use './components/features';
+@use './components/footer';
+@use './components/header';
+*/

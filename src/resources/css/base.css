@@ -1,0 +1,9 @@
+@layer base {
+  body {
+    @apply w-screen m-auto font-rubik leading-8 text-base lg:text-lg font-normal; 
+  }
+
+  button {
+    background-color: var(--color-secondary);
+  }
+}
