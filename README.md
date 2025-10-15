@@ -5,7 +5,7 @@ This repository contains the Level 3 implementation of the Sprint 1 for the ITAc
 
 The project is a vite project with some dependencies. Check the package.json for more accurated information.
 
-![alt basic screenshot from the project](https://github.com/neuroflip//bookmark-landing-page/blob/tailwind-implementation/etc/screenshot.png?raw=true)
+![alt basic screenshot from the project](https://github.com/neuroflip/bookmark-landing-page/blob/feature/tailwind-implementation/etc/screenshot.png)
 
 ## Description
 
