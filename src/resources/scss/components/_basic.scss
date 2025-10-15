@@ -1,63 +1,76 @@
-@use './basic.l';
-@use './mixins/button';
-@use '../variables' as globals;
-@use '../colors';
-@use '../fonts';
+@use './_basic.l.scss';
+@use './mixins/_button.scss';
+@use '../_variables.scss' as globals;
+@use '../_colors.scss';
+@use '../_fonts.scss';
 
-a {
-  color: colors.$background-color;
-  text-decoration: none;
-}
+@layer base {
+  body {
+    font-family: fonts.$fontfamily;
+    line-height: fonts.$line-height;
+    font-size: fonts.$fontsize;
+    font-weight: 400;
+  }
 
-p {
-  color: colors.$foreground-color;
-  margin: 2rem 0;
-}
+  main {
+    margin-top: 150px;
+  }
 
-h1 {
-  line-height: 3rem;
-  margin-bottom: 2rem;
-}
+  a {
+    color: colors.$background-color;
+    text-decoration: none;
+  }
 
-h2 {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  font-weight: 400;
-}
+  p {
+    color: colors.$foreground-color;
+    margin: 2rem 0;
+  }
 
-li {
-  list-style: none;
-}
+  h1 {
+    line-height: 3rem;
+    margin-bottom: 2rem;
+  }
 
-button {
-  font-family: fonts.$font-family;
-  font-size: 1.1rem;
-  border-radius: globals.$border-radius;
-  padding: 1rem;
-  box-shadow: globals.$box-shadow;
-  cursor: pointer;
-}
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+  }
 
-.button.primary {
-  @include button.colored(colors.$primary-color, colors.$background-color, colors.$primary-color);
-}
+  li {
+    list-style: none;
+  }
 
-.button.clearGrey {
-  @include button.colored(colors.$clear-grey-color, black, colors.$clear-grey-color);
-}
+  button {
+    font-family: fonts.$fontfamily;
+    font-size: 1.1rem;
+    border-radius: globals.$border-radius;
+    padding: 1rem;
+    box-shadow: globals.$box-shadow;
+    cursor: pointer;
+  }
 
-.button.danger {
-  @include button.colored(colors.$danger-color, colors.$background-color, colors.$danger-color);
-}
+  .button.primary {
+    @include button.colored(colors.$primary-color, colors.$background-color, colors.$primary-color);
+  }
 
-.button.primary:hover {
-  @include button.colored(colors.$background-color, colors.$primary-color, colors.$primary-color);
-}
+  .button.clearGrey {
+    @include button.colored(colors.$clear-grey-color, black, colors.$clear-grey-color);
+  }
 
-.button.clearGrey:hover {
-  @include button.colored(colors.$background-color, colors.$secondary-color, colors.$secondary-color);
-}
+  .button.danger {
+    @include button.colored(colors.$danger-color, colors.$background-color, colors.$danger-color);
+  }
 
-.button.danger:hover {
-  @include button.colored(colors.$background-color, colors.$danger-color, colors.$danger-color);
+  .button.primary:hover {
+    @include button.colored(colors.$background-color, colors.$primary-color, colors.$primary-color);
+  }
+
+  .button.clearGrey:hover {
+    @include button.colored(colors.$background-color, colors.$secondary-color, colors.$secondary-color);
+  }
+
+  .button.danger:hover {
+    @include button.colored(colors.$background-color, colors.$danger-color, colors.$danger-color);
+  }
 }

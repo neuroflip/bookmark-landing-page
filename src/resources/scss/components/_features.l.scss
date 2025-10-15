@@ -22,7 +22,7 @@
 
     .tab {
       border-top: 0;
-      border-bottom: 1px solid colors.$terciary-color
+      border-bottom: 1px solid var(--color-terciary);
     }
 
     .tabs__content {

@@ -4,11 +4,14 @@
 
 :root, :host {
   --filter-logo: invert(91%) sepia(92%) saturate(2%) hue-rotate(100deg) brightness(107%) contrast(99%);
+  --filter-arrow: invert(10%) sepia(80%) saturate(200%) hue-rotate(-10deg) brightness(110%) contrast(110%);
   --border-radius: 0.5rem;
   --box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
 
   --main-left-margin: 10vw;
   --main-right-margin: 10vw;
+  --font-size: 16px;
+  --line-height: 32px;
 }
 
 @theme {

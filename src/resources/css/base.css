@@ -1,9 +1,29 @@
 @layer base {
   body {
-    @apply w-screen m-auto font-rubik leading-8 text-base lg:text-lg font-normal; 
+    @apply w-screen m-auto font-rubik leading-(--line-height) text-(--font-size) font-normal; 
   }
 
   button {
-    background-color: var(--color-secondary);
+    @apply font-[var(--font-rubik)] text-[1.1rem] rounded-[var(--border-radius)] p-[1rem] [box-shadow:var(--box-shadow)] cursor-pointer;
+  }
+
+  h1 {
+    @apply text-3xl leading-[3rem] mb-[2rem];
+  }
+
+  h2 {
+    @apply text-[1.2rem] mb-[2rem] font-normal;
+  }
+
+  p {
+    @apply text-(--color-foreground) my-[2rem] mx-0 md:text-[1.2rem];
+  }
+
+  li {
+    @apply [list-style:none];
+  }
+
+  a {
+    @apply text-(--color-background) no-underline;
   }
 }
