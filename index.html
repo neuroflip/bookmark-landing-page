@@ -113,14 +113,14 @@
           <img class="browserLogo mx-auto mt-[7vh] h-auto max-w-[50vw]" src="./src/resources/img/logo-chrome.svg" alt="Google Chrome logo" />
           <h2 class="mt-[2rem] mr-0 mb-0 ml-0">Add to Chrome</h2>
           <p class="mt-0 mr-0 mb-[1.5rem] ml-0">Minimum version 62</p>
-          <img class="dotLine max-w-[100%] h-auto" src="./src/resources/img/bg-dots.svg" class="dotline" alt="dot line separation" />
+          <img class="dotLine max-w-[100%] h-auto" src="./src/resources/img/bg-dots.svg" alt="dot line separation" />
           <button class="button--primary m-6 text-base">Add & Install the extension</button>
         </article>
         <article class="card md:self-center">
           <img class="browserLogo mx-auto mt-[7vh] h-auto max-w-[50vw]" src="./src/resources/img/logo-firefox.svg" alt="Firefox logo" />
           <h2 class="mt-[2rem] mr-0 mb-0 ml-0">Add to Firefox</h2>
           <p class="mt-0 mr-0 mb-[1.5rem] ml-0">Minimum version 55</p>
-          <img class="dotLine max-w-[100%] h-auto" src="./src/resources/img/bg-dots.svg" class="dotline" alt="dot line separation" />
+          <img class="dotLine max-w-[100%] h-auto" src="./src/resources/img/bg-dots.svg" alt="dot line separation" />
           <button class="button--primary button--primary m-6 text-base">Add & Install the extension</button>
         </article>
         <article class="card md:self-end">
@@ -188,22 +188,26 @@
     </section>
   </main>
   
+
+
   
-  <footer>
+  <footer class="bg-(--color-secondary)">
     <nav class="navBar__footer">
-      <ul>
-        <li class="nohover">
-          <a href="/">
-            <h1><img class="navBar__footer--brand" src="./src/resources/img/logo-bookmark.svg" alt="Bookmark logo icon" /></h1>
+      <ul class="md:flex-row md:p-0 flex flex-col my-0 mx-14 p-4 gap-4">
+        <li class="md:w-auto text-center uppercase my-auto mx-0 w-full">
+          <a href="/" class="hover:text-[var(--color-danger)]">
+            <h1 class="text-[1rem] m-0">
+              <img class="navBar__footer--brand m-[15px] cursor-pointer filter-(--filter-logo) hover:filter-(--filter-logo)" src="./src/resources/img/logo-bookmark.svg" alt="Bookmark logo icon" />
+            </h1>
           </a>
         </li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="/pricing">Pricing</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <img src="./src/resources/img/icon-facebook.svg" alt="facebook link icon" width="30" height="24" />
-          <img src="./src/resources/img/icon-twitter.svg" alt="Twitter link icon" width="30" height="24" />
-        </li>
+        <li class="md:w-auto text-center uppercase my-auto mx-0 w-full"><a href="#features">Features</a></li>
+        <li class="md:w-auto text-center uppercase my-auto mx-0 w-full"><a href="/pricing">Pricing</a></li>
+        <li class="md:w-auto text-center uppercase my-auto mx-0 w-full"><a href="#contact">Contact</a></li>
+          <li class="md:w-auto md:mr-0 md:ml-auto text-center uppercase ml-auto mr-[45px] mx-0 w-full">
+            <img class="inline m-[15px] cursor-pointer" src="./src/resources/img/icon-facebook.svg" alt="facebook link icon" width="30" height="24" />
+            <img  class="inline m-[15px] cursor-pointer" src="./src/resources/img/icon-twitter.svg" alt="Twitter link icon" width="30" height="24" />
+          </li>
       </ul>
     </nav>
   </footer>

@@ -4,7 +4,7 @@
   }
 
   button {
-    @apply font-[var(--font-rubik)] text-[1.1rem] rounded-[var(--border-radius)] p-[1rem] [box-shadow:var(--box-shadow)] cursor-pointer;
+    @apply font-rubik text-[1.1rem] rounded-[var(--border-radius)] p-[1rem] [box-shadow:var(--box-shadow)] cursor-pointer;
   }
 
   h1 {
