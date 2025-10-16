@@ -1,9 +1,9 @@
 # ITAcademy - Sprint1
 ## Level 2: Javascript and Sass
 
-This repository contains the Level 1 implementation of the Sprint 1 for the ITAcademy FrontEnd Bootcamp.
+This repository contains the Level 2 implementation of the Sprint 1 for the ITAcademy FrontEnd Bootcamp.
 
-The project is a vite project with no other dependency.
+The project is a vite project with sass dependency. Check the package.json for more info.
 
 ## Description
 
