@@ -39,7 +39,7 @@ The code is structured as follows:
 
 - Clone the repository https://github.com/neuroflip/bookmark-landing-page
 ```
-git checkout feature/sass-implementation
+git checkout feature/tailwind-implementation
 npm install
 npm run build
 npm run preview
@@ -56,7 +56,7 @@ Or run it in dev mode using:
 
 Look at the package.json for more info on scripts and dependencies.
 
-The project is live at: [https://neuroflip.github.io/vanilla-implementation](https://neuroflip.github.io/vanilla-implementation)
+The project is live at: [https://neuroflip.github.io/bookmark-landing-page](https://neuroflip.github.io/bookmark-landing-page)
 
 ## Considerations
 
