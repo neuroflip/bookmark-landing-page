@@ -69,3 +69,4 @@ The project is live at: [https://neuroflip.github.io/vanilla-implementation](htt
 7. The blue background of big images is implemented using the :before pseudo element to avoid a new div container at the markup.
 8. WCAG Accesibility check using [https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh](https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh). There are still some errors and warnings because: form does not have a label for the email input (there is no label at the original design) and some Very low contrast between text and background colors errors (caused by the original design too).
 9. css arquitecture is using the tailwind layers to define the more used classes in common.
+10. /etc directory just contains an screenshot of the project just for this README file.

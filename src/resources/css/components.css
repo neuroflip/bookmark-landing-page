@@ -43,7 +43,7 @@
   .bottom--border {
     @apply md:group-[.active]:m-0 md:group-[.active]:w-full group-[.active]:w-[68%];
     @apply group-[.active]:my-0 group-[.active]:mx-auto group-[.active]:border-b-4;
-    @apply group-[.active]:border-b-(--color-danger) px-4 py-4;
+    @apply group-[.active]:border-b-(--color-danger) px-4 py-4 h-full;
   }
 
   .navBar--item {
