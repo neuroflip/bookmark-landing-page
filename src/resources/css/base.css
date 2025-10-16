@@ -4,7 +4,8 @@
   }
 
   button {
-    @apply font-rubik text-[1.1rem] rounded-[var(--border-radius)] p-[1rem] [box-shadow:var(--box-shadow)] cursor-pointer;
+    @apply font-rubik text-[1.1rem] rounded-(--border-radius) p-[0.7rem];
+    @apply  text-sm m-[10px] shadow-(--box-shadow) cursor-pointer text-center;
   }
 
   h1 {
@@ -12,7 +13,7 @@
   }
 
   h2 {
-    @apply text-[1.2rem] mb-[2rem] font-normal;
+    @apply text-[1rem] md:text-[1.2rem] mb-[2rem] font-normal;
   }
 
   p {

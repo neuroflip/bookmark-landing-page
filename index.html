@@ -48,25 +48,24 @@
 
   <main class="mt-[150px]">
 
-
     <section class="md:flex-row flex flex-col text-center mt-[13vw] mr-0 mb-[16vw] ml-(--main-left-margin)">
-        <div class="md:order-2 md:w-[50%] md:h-[50%] relative before:content-[''] before:bg-(--color-primary) before:absolute before:bottom-0 before:right-0 before:w-[77%] before:h-[77%] before:rounded-s-full before:z-0">
-          <img src="./src/resources/img/illustration-hero.svg" class="md:right-(calc(--main-right-margin/2)) relative block z-1 w-[100%] h-auto max-w-[80vw]" alt="Window app sketch" />
+        <div class="md:order-2 md:w-[60%] md:h-[50%] relative before:content-[''] before:bg-(--color-primary) before:absolute before:bottom-0 before:right-0 before:w-[77%] before:h-[77%] before:rounded-s-full before:z-0">
+          <img src="./src/resources/img/illustration-hero.svg" class="md:right-[3vw] relative block z-1 w-[100%] h-auto max-w-[80vw]" alt="Window app sketch" />
         </div>
-        <div class="md:flex-col md:w-[50%] md:h-[50%] mr-[6vw]">
-          <h1 class="md:text-5xl text-3xl text-left mt-[5vw]">A Simple Bookmark Manager</h1>
-          <p class="text-left">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+        <div class="md:flex-col md:w-[50%] md:h-[40%] mr-[6vw]">
+          <h1 class="md:text-5xl text-3xl md:text-left mt-[5vw]">A Simple Bookmark Manager</h1>
+          <p class="md:text-left text-center">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
           <div class="flex relative justify-center">
-            <button class="button--primary m-[10px]">Get it on Chrome</button>
-            <button class="button--clearGrey m-[10px]">Get it on Firefox</button>
+            <button class="button--primary">Get it on Chrome</button>
+            <button class="button--clearGrey">Get it on Firefox</button>
           </div>
         </div>
     </section>
 
     
-    <section id="features" class="text-center mb-50">
+    <section id="features" class="text-center mb-[15vh]">
         <h1>Features</h1>
-        <p class="md:w-[39vw] text-center w-80 mt-0 mb-0 ml-auto mr-auto">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks syncs between your devices so you can access them on the go.</p>
+        <p class="md:w-[39vw] text-center w-80 mt-0 mb-0 mx-auto">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks syncs between your devices so you can access them on the go.</p>
         
         <div class="flex flex-col md:flex-row justify-center mt-6 mb-20 ml-10 mr-10">
           <div id="tab1" class="tab group active" tabindex="0">
@@ -81,61 +80,61 @@
         </div>
         <div class="flex flex-col gap-7 md:flex-row">
           <div class="relative md:w-1/2 md:h-1/2 before:bg-(--color-primary) before:content-[''] before:absolute before:-bottom-[90px] before:left-0 before:w-[77%] before:h-full before:rounded-tl-[0] before:rounded-br-[50%] before:rounded-tr-[50%] before:rounded-bl-[0] before:z-0">
-            <img class="tabs__image relative block z-1 h-auto w-[85%] mt-0 mr-auto mb-auto ml-10 tab1 [&.tab1]:content-[url('./src/resources/img/illustration-features-tab-1.svg')] [&.tab2]:content-[url('./src/resources/img/illustration-features-tab-2.svg')] [&.tab3]:content-[url('./src/resources/img/illustration-features-tab-3.svg')]" alt="window app sketch"></img>
+            <img class="tabs__image relative block z-1 h-auto w-[85%] mt-0 mr-auto mb-auto mx-auto md:ml-[10vw] tab1 [&.tab1]:content-[url('./src/resources/img/illustration-features-tab-1.svg')] [&.tab2]:content-[url('./src/resources/img/illustration-features-tab-2.svg')] [&.tab3]:content-[url('./src/resources/img/illustration-features-tab-3.svg')]" alt="window app sketch"></img>
           </div>
-          <div class="tab__content group [&.active]:block md:[&.active]:w-1/2 md:[&.active]:ml-[5vw] md:[&.active]:mr-[10vw] md:[&.active]:my-[auto] hidden ml-[10vw] mr-[10vw] my-[10vh] active" data-forTab="tab1">
+          <div class="group [&.active]:block md:[&.active]:w-1/2 md:[&.active]:ml-[10vw] md:[&.active]:mr-[10vw] md:[&.active]:my-[auto] hidden ml-[10vw] mr-[10vw] mt-[14vh] mb-0 active" data-forTab="tab1">
             <h1 class="md:text-left">Bookmark in one click</h1>
             <p class="md:text-left">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
             <button class="button--primary hidden md:block">More info</button>
           </div>
-          <div class="tab__content group [&.active]:block md:[&.active]:w-1/2 md:[&.active]:ml-[5vw] md:[&.active]:mr-[10vw] md:[&.active]:my-[auto] hidden ml-[10vw] mr-[10vw] my-[10vh]" data-forTab="tab2">
+          <div class="group [&.active]:block md:[&.active]:w-1/2 md:[&.active]:ml-[5vw] md:[&.active]:mr-[10vw] md:[&.active]:my-[auto] hidden ml-[10vw] mr-[10vw] mt-[14vh] mb-0" data-forTab="tab2">
             <h1 class="md:text-left">Intelligent search</h1>
             <p class="md:text-left">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-            <button class="button--primary">More info</button>
+            <button class="button--primary block">More info</button>
           </div>
-          <div class="tab__content group [&.active]:block md:[&.active]:w-1/2 md:[&.active]:ml-[5vw] md:[&.active]:mr-[10vw] md:[&.active]:my-[auto] hidden ml-[10vw] mr-[10vw] my-[10vh]" data-forTab="tab3">
+          <div class="group [&.active]:block md:[&.active]:w-1/2 md:[&.active]:ml-[5vw] md:[&.active]:mr-[10vw] md:[&.active]:my-[auto] hidden ml-[10vw] mr-[10vw] mt-[14vh] mb-0" data-forTab="tab3">
             <h1 class="md:text-left">Share your bookmarks</h1>
             <p class="md:text-left">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
-            <button class="button--primary">More info</button>
+            <button class="button--primary block">More info</button>
           </div>
         </div>
     </section>
 
 
 
-    <section class="section--extensions text-center mt-[15vh] mr-(--main-margin-right) mb-[25vh] ml-(--main-margin-left)">
-      <div class="extensions__text md:mt-0 md:mx-[30vw] md:mb-[5vh]">
+    <section class="text-center mt-[6vh] mr-(--main-right-margin) mb-[25vh] ml-(--main-left-margin)">
+      <div class="md:mt-0 md:mx-[15vw] md:mb-[5vh]">
         <h1 class="mt-[16vw]">Download the extension</h1>
         <p>We've got more browsers in the pipeline. Please do let us know if you've got a favorite you'd like us to prioritize.</p>
       </div>
-      <div class="card__container md:flex-row md:h-[55vh] flex gap-[3vw] flex-col items-center justify-center">
+      <div class="md:flex-row md:h-[55vh] flex gap-[3vw] flex-col items-center justify-center">
         <article class="card">
-          <img class="browserLogo mx-auto mt-[7vh] h-auto max-w-[50vw]" src="./src/resources/img/logo-chrome.svg" alt="Google Chrome logo" />
+          <img class="mx-auto mt-[7vh] h-auto max-w-[50vw]" src="./src/resources/img/logo-chrome.svg" alt="Google Chrome logo" />
           <h2 class="mt-[2rem] mr-0 mb-0 ml-0">Add to Chrome</h2>
           <p class="mt-0 mr-0 mb-[1.5rem] ml-0">Minimum version 62</p>
           <img class="dotLine max-w-[100%] h-auto" src="./src/resources/img/bg-dots.svg" alt="dot line separation" />
-          <button class="button--primary m-6 text-base">Add & Install the extension</button>
+          <button class="button--primary m-6">Add & Install the extension</button>
         </article>
         <article class="card md:self-center">
-          <img class="browserLogo mx-auto mt-[7vh] h-auto max-w-[50vw]" src="./src/resources/img/logo-firefox.svg" alt="Firefox logo" />
+          <img class="mx-auto mt-[7vh] h-auto max-w-[50vw]" src="./src/resources/img/logo-firefox.svg" alt="Firefox logo" />
           <h2 class="mt-[2rem] mr-0 mb-0 ml-0">Add to Firefox</h2>
           <p class="mt-0 mr-0 mb-[1.5rem] ml-0">Minimum version 55</p>
-          <img class="dotLine max-w-[100%] h-auto" src="./src/resources/img/bg-dots.svg" alt="dot line separation" />
-          <button class="button--primary button--primary m-6 text-base">Add & Install the extension</button>
+          <img class="max-w-[100%] h-auto" src="./src/resources/img/bg-dots.svg" alt="dot line separation" />
+          <button class="button--primary button--primary m-6">Add & Install the extension</button>
         </article>
         <article class="card md:self-end">
-          <img class="browserLogo mx-auto mt-[7vh] h-auto max-w-[50vw]" src="./src/resources/img/logo-opera.svg" alt="Opera logo" />
+          <img class="mx-auto mt-[7vh] h-auto max-w-[50vw]" src="./src/resources/img/logo-opera.svg" alt="Opera logo" />
           <h2 class="mt-[2rem] mr-0 mb-0 ml-0">Add to Opera</h2>
           <p class="mt-0 mr-0 mb-[1.5rem] ml-0">Minimum version 46</p>
-          <img class="dotLine max-w-[100%] h-auto" src="./src/resources/img/bg-dots.svg" class="dotline" alt="dot line separation" />
-          <button class="button--primary button--primary m-6 text-base">Add & Install the extension</button>
+          <img class="max-w-[100%] h-auto" src="./src/resources/img/bg-dots.svg" alt="dot line separation" />
+          <button class="button--primary button--primary m-6">Add & Install the extension</button>
         </article>
       </div>
     </section>
 
 
 
-    <section class="section--faq md:max-w-[40vw] text-center mt-0 mx-auto mb-[25vw] max-w-[80vw]">
+    <section class="md:max-w-[40vw] text-center mt-0 mx-auto mb-[25vw] max-w-[80vw]">
       <h1>Frequently Asked Questions</h1>
       <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
       <details class="group border-t-[1px] border-b-[1px] border-(--color-terciary)">
@@ -171,10 +170,10 @@
 
 
 
-    <section id="contact" class="section--contact md:py-[10vw] md:px-[32vw] w-full my-0 mx-auto py-[10vw] px-(--main-left-margin) flex flex-col text-center bg-(--color-primary) text-(--color-background)">
+    <section id="contact" class="md:py-[10vw] md:px-[32vw] w-full my-0 mx-auto py-[10vw] px-(--main-left-margin) flex flex-col text-center bg-(--color-primary) text-(--color-background)">
       <h2 class="md:w-[91%] mt-auto mx-auto mb-[1vh] ml-auto tracking-[0.3rem]">35,000+ ALREADY JOINED</h2>
       <h1>Stay up-to-date with what we're doing</h1>
-      <form id="contactForm" class="contact__form md:flex-row flex flex-col" novalidate>
+      <form id="contactForm" class="md:flex-row flex flex-col" novalidate>
         <div class="email__feedback bg-(--color-danger) rounded-(--border-radius) md:m-auto w-full group valid [&.valid]:block [&.valid]:bg-[inherit]">
           <input class="email h-[42px] text-(--color-foreground) bg-(--color-background) focus:b-0 border-0 rounded-(--border-radius) p-[1rem] bg-none w-full valid:bg-none invalid:bg-[url('./src/resources/img/icon-error.svg')] invalid:bg-size-[20px] invalid:bg-no-repeat invalid:bg-origin-content invalid:bg-right" id="email" name="email" type="email" 
             required alt="email inout for contact us form" 
@@ -183,7 +182,7 @@
             Whoops, make sure it's an email.
           </div>
         </div>
-        <button id="contactFormSubmitButton" class="button--danger h-[42px] text-center md:mr-auto md:ml-[2vw] md:mt-0 p-[0px] min-w-[120px] mt-[1rem]">Contact Us</button>
+        <button id="contactFormSubmitButton" class="button--danger h-[42px] md:mr-auto md:ml-[2vw] md:mt-0 p-[0px] min-w-[120px] mt-[1rem]">Contact Us</button>
       </form>
     </section>
   </main>
@@ -191,13 +190,13 @@
 
 
   
-  <footer class="bg-(--color-secondary)">
-    <nav class="navBar__footer">
-      <ul class="md:flex-row md:p-0 flex flex-col my-0 mx-14 p-4 gap-4">
+  <footer class="bg-(--color-secondary) md:h-[100px]">
+    <nav class="h-full">
+      <ul class="md:flex-row md:p-0 flex flex-col my-0 md:mx-[10vw] p-4 gap-8 h-full items-center">
         <li class="md:w-auto text-center uppercase my-auto mx-0 w-full">
           <a href="/" class="hover:text-[var(--color-danger)]">
             <h1 class="text-[1rem] m-0">
-              <img class="navBar__footer--brand m-[15px] cursor-pointer filter-(--filter-logo) hover:filter-(--filter-logo)" src="./src/resources/img/logo-bookmark.svg" alt="Bookmark logo icon" />
+              <img class="navBar__footer--brand mx-auto md:m-[15px] cursor-pointer filter-(--filter-logo) hover:filter-(--filter-logo)" src="./src/resources/img/logo-bookmark.svg" alt="Bookmark logo icon" />
             </h1>
           </a>
         </li>
@@ -205,8 +204,8 @@
         <li class="md:w-auto text-center uppercase my-auto mx-0 w-full"><a href="/pricing">Pricing</a></li>
         <li class="md:w-auto text-center uppercase my-auto mx-0 w-full"><a href="#contact">Contact</a></li>
           <li class="md:w-auto md:mr-0 md:ml-auto text-center uppercase ml-auto mr-[45px] mx-0 w-full">
-            <img class="inline m-[15px] cursor-pointer" src="./src/resources/img/icon-facebook.svg" alt="facebook link icon" width="30" height="24" />
-            <img  class="inline m-[15px] cursor-pointer" src="./src/resources/img/icon-twitter.svg" alt="Twitter link icon" width="30" height="24" />
+            <img class="inline mx-[15px] my-auto cursor-pointer" src="./src/resources/img/icon-facebook.svg" alt="facebook link icon" width="30" height="24" />
+            <img  class="inline mx-[15px] my-auto cursor-pointer" src="./src/resources/img/icon-twitter.svg" alt="Twitter link icon" width="30" height="24" />
           </li>
       </ul>
     </nav>
