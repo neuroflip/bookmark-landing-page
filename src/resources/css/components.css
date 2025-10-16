@@ -1,0 +1,64 @@
+@layer components {
+  .button--primary {
+    @apply bg-(--color-primary) text-(--color-background);
+    @apply border-[3px] border-(--color-primary);
+  }
+
+  .button--primary:hover {
+    @apply bg-(--color-background) text-(--color-primary);
+    @apply border-[3px] border-(--color-primary);
+  }
+
+  .button--clearGrey {
+    @apply bg-(--color-clear-grey) text-black;
+    @apply border-[3px] border-(--color-clear-grey);
+  }
+
+  .button--clearGrey:hover {
+    @apply bg-(--color-background) text-(--color-secondary);
+    @apply border-[3px] border-(--color-secondary);
+  }
+
+  .button--danger {
+    @apply bg-(--color-danger) text-(--color-background);
+    @apply border-[3px] border-(--color-danger);
+  }
+
+  .button--danger:hover {
+    @apply bg-(--color-background) text-(--color-danger);
+    @apply border-[3px] border-(--color-danger);
+  }
+
+  .tab {
+    @apply cursor-pointer text-[1.1rem] border-t-1 border-t-(--color-terciary); 
+    @apply text-[#ccc] overflow-visible [&.active]:text-black md:border-b-1 md:w-[20vw];
+    @apply md:border-b-(--color-terciary) hover:text-(--color-danger) md:border-t-[0];
+  }
+
+  .card {
+    @apply max-w-[300px] max-h-[450px] rounded-(--border-radius) shadow-(--box-shadow);
+    @apply md:self-start;
+  }
+
+  .bottom--border {
+    @apply md:group-[.active]:m-0 md:group-[.active]:w-full group-[.active]:w-[68%];
+    @apply group-[.active]:my-0 group-[.active]:mx-auto group-[.active]:border-b-4;
+    @apply group-[.active]:border-b-(--color-danger) px-4 py-4 h-full;
+  }
+
+  .navBar--item {
+    @apply border-t-1 border-t-(--color-foreground) py-[20px] px-0;
+    @apply text-(--color-background) uppercase;
+    @apply font-medium text-base text-center tracking-[2px];
+    @apply md:border-t-0 md:my-auto md:mx-[20px] md:p-0;
+  }  
+
+  summary {
+    @apply  flex justify-between list-none w-full gap-[20px] text-left;
+  }
+
+  summary:hover {
+    @apply text-(--color-danger);
+  }
+
+}

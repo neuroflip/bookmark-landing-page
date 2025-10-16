@@ -1,0 +1,30 @@
+{
+  "name": "bookmark-landing-page",
+  "version": "0.0.1",
+  "description": "Bookmark Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build",
+    "preview": "vite preview",
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neuroflip/bookmark-landing-page.git"
+  },
+  "author": "Jose A. Anguita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neuroflip/bookmark-landing-page/issues"
+  },
+  "homepage": "https://github.com/neuroflip/bookmark-landing-page#readme",
+  "devDependencies": {
+    "vite": "^7.1.7"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "@tailwindcss/vite": "^4.1.14",
+    "tailwindcss": "^4.1.14"
+  }
+}

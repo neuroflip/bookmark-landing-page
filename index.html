@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark Landing Page</title>
+  <link rel="icon" type="image/x-icon" href="./src/resources//img/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./output.css" />
+
+  <script defer src="./src/js/main.js" type="module"></script>
+</head>
+
+<body>
+  <header id="menu" class="group closed [&.closed]:bg-(--color-background) [&.closed]:h-[120px] md:[&.closed]:w-[100%] bg-(--color-secondary) z-10 w-[100vw] h-[100vh] fixed left-0 top-0 grid justify-center grid-cols-[25%_10%_25%_40%] grid-rows-[120px_auto]">
+    <a class="col-start-1 col-end-2 filter-(--filter-logo) my-[45px] ml-[10vw] mr-auto group-[.closed]:filter-none" href="/">
+      <h1>
+        <img class="max-w-[initial]" src="./src/resources/img/logo-bookmark.svg" alt="Logo Bookmark" />
+      </h1>
+    </a>
+    <nav id="navBar" class="row-start-2 row-end-2 col-start-1 col-end-5 md:col-start-3 md:col-end-5 md:row-start-[initial] md:row-end-[initial]">
+      <ul class="group-[.closed]:hidden md:group-[.closed]:flex md:group-[.closed]:flex-row md:group-[.closed]:my-[29px] md:group-[.closed]:mx-[6vw] md:justify-end justify-center my-0 mx-auto py-0 px-[2rem]">
+        <li class="navBar--item md:border-top:0 md:my-auto md:mx-[20px] md:p-0">
+          <a class="md:text-black" href="#features">features</a>
+        </li>
+        <li class="navBar--item md:border-top:0 md:my-auto md:mx-[20px] md:p-0">
+          <a class="md:text-black" href="/pricing">pricing</a>
+        </li>
+        <li class="navBar--item md:border-top:0 md:my-auto md:mx-[20px] md:p-0">
+          <a class="md:text-black" href="#contact">contact</a>
+        </li>
+        <li class="navBar--item md:border-top:0 md:my-auto md:mx-[20px] md:p-0">
+          <button class="p-[15px] border-3 border-(--color-background) w-[16rem] font-medium uppercase rounded-[0.5rem] tracking-[2px] text-[1rem] text-center md:w-auto md:m-0 md:bg-(--color-danger) md:border-(--color-danger) md:text-(--color-background) md:hover:bg-(--color-background) md:hover:text-(--color-danger) md:hover:border-(--color-danger)">login</button>
+        </li>
+        <li class="md:hidden flex border-t-0 justify-center absolute bottom-0 left-0 w-[100%] mb-[20px]">
+          <img class="m-[15px]" src="./src/resources/img/icon-facebook.svg" alt="Facebook logo icon" />
+          <img class="m-[15px]" src="./src/resources/img/icon-twitter.svg" alt="Twitter logo icon" />
+        </li>
+      </ul>
+    </nav>
+    <img id="burguerMenu__icon" src="./src/resources/img/icon-close.svg" class="col-start-4 col-end-4 mt-[50px] mb-[45px] mr-[45px] ml-auto cursor-pointer group-[.closed]:content-[url(./src/resources/img/icon-hamburger.svg)] md:hidden" alt="Icon Menu" />
+  </header>
+
+  <main class="mt-[150px]">
+
+    <section class="md:flex-row flex flex-col text-center mt-[13vw] mr-0 mb-[16vw] ml-(--main-left-margin)">
+        <div class="md:order-2 md:w-[60%] md:h-[50%] relative before:content-[''] before:bg-(--color-primary) before:absolute before:bottom-0 before:right-0 before:w-[77%] before:h-[77%] before:rounded-s-full before:z-0">
+          <img src="./src/resources/img/illustration-hero.svg" class="md:right-[3vw] relative block z-1 w-[100%] h-auto max-w-[80vw]" alt="Window app sketch" />
+        </div>
+        <div class="md:flex-col md:w-[50%] md:h-[40%] mr-[6vw]">
+          <h1 class="md:text-5xl text-3xl md:text-left mt-[5vw]">A Simple Bookmark Manager</h1>
+          <p class="md:text-left text-center">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+          <div class="flex relative justify-center">
+            <button class="button--primary">Get it on Chrome</button>
+            <button class="button--clearGrey">Get it on Firefox</button>
+          </div>
+        </div>
+    </section>
+
+    
+    <section id="features" class="text-center mb-[15vh]">
+        <h1>Features</h1>
+        <p class="md:w-[39vw] text-center w-80 mt-0 mb-0 mx-auto">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks syncs between your devices so you can access them on the go.</p>
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-center mt-6 mb-20 ml-10 mr-10">
+          <div id="tab1" class="tab group active" tabindex="0">
+            <div role="button" class="bottom--border">Simple Bookmarking</div>
+          </div>
+          <div id="tab2" class="tab group" tabindex="0">
+            <div role="button" class="bottom--border">Speedy Searching</div>
+          </div>
+          <div id="tab3" class="tab group border-b-1 border-b-(#ccc)" tabindex="0">
+            <div role="button" class="bottom--border">Easy Sharing</div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-7 md:flex-row">
+          <div class="relative md:w-1/2 md:h-1/2 before:bg-(--color-primary) before:content-[''] before:absolute before:-bottom-[90px] before:left-0 before:w-[77%] before:h-full before:rounded-tl-[0] before:rounded-br-[50%] before:rounded-tr-[50%] before:rounded-bl-[0] before:z-0">
+            <img class="tabs__image relative block z-1 h-auto w-[85%] mt-0 mr-auto mb-auto mx-auto md:ml-[10vw] tab1 [&.tab1]:content-[url('./src/resources/img/illustration-features-tab-1.svg')] [&.tab2]:content-[url('./src/resources/img/illustration-features-tab-2.svg')] [&.tab3]:content-[url('./src/resources/img/illustration-features-tab-3.svg')]" alt="window app sketch"></img>
+          </div>
+          <div class="group [&.active]:block md:[&.active]:w-1/2 md:[&.active]:ml-[10vw] md:[&.active]:mr-[10vw] md:[&.active]:my-[auto] hidden ml-[10vw] mr-[10vw] mt-[14vh] mb-0 active" data-forTab="tab1">
+            <h1 class="md:text-left">Bookmark in one click</h1>
+            <p class="md:text-left">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+            <button class="button--primary hidden md:block">More info</button>
+          </div>
+          <div class="group [&.active]:block md:[&.active]:w-1/2 md:[&.active]:ml-[5vw] md:[&.active]:mr-[10vw] md:[&.active]:my-[auto] hidden ml-[10vw] mr-[10vw] mt-[14vh] mb-0" data-forTab="tab2">
+            <h1 class="md:text-left">Intelligent search</h1>
+            <p class="md:text-left">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+            <button class="button--primary md:block">More info</button>
+          </div>
+          <div class="group [&.active]:block md:[&.active]:w-1/2 md:[&.active]:ml-[5vw] md:[&.active]:mr-[10vw] md:[&.active]:my-[auto] hidden ml-[10vw] mr-[10vw] mt-[14vh] mb-0" data-forTab="tab3">
+            <h1 class="md:text-left">Share your bookmarks</h1>
+            <p class="md:text-left">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+            <button class="button--primary md:block">More info</button>
+          </div>
+        </div>
+    </section>
+
+
+
+    <section class="text-center mt-[6vh] mr-(--main-right-margin) mb-[25vh] ml-(--main-left-margin)">
+      <div class="md:mt-0 md:mx-[15vw] md:mb-[5vh]">
+        <h1 class="mt-[16vw]">Download the extension</h1>
+        <p>We've got more browsers in the pipeline. Please do let us know if you've got a favorite you'd like us to prioritize.</p>
+      </div>
+      <div class="md:flex-row md:h-[55vh] flex gap-[3vw] flex-col items-center justify-center">
+        <article class="card">
+          <img class="mx-auto mt-[7vh] h-auto max-w-[50vw]" src="./src/resources/img/logo-chrome.svg" alt="Google Chrome logo" />
+          <h2 class="mt-[2rem] mr-0 mb-0 ml-0">Add to Chrome</h2>
+          <p class="mt-0 mr-0 mb-[1.5rem] ml-0">Minimum version 62</p>
+          <img class="dotLine max-w-[100%] h-auto" src="./src/resources/img/bg-dots.svg" alt="dot line separation" />
+          <button class="button--primary m-6">Add & Install the extension</button>
+        </article>
+        <article class="card md:self-center">
+          <img class="mx-auto mt-[7vh] h-auto max-w-[50vw]" src="./src/resources/img/logo-firefox.svg" alt="Firefox logo" />
+          <h2 class="mt-[2rem] mr-0 mb-0 ml-0">Add to Firefox</h2>
+          <p class="mt-0 mr-0 mb-[1.5rem] ml-0">Minimum version 55</p>
+          <img class="max-w-[100%] h-auto" src="./src/resources/img/bg-dots.svg" alt="dot line separation" />
+          <button class="button--primary button--primary m-6">Add & Install the extension</button>
+        </article>
+        <article class="card md:self-end">
+          <img class="mx-auto mt-[7vh] h-auto max-w-[50vw]" src="./src/resources/img/logo-opera.svg" alt="Opera logo" />
+          <h2 class="mt-[2rem] mr-0 mb-0 ml-0">Add to Opera</h2>
+          <p class="mt-0 mr-0 mb-[1.5rem] ml-0">Minimum version 46</p>
+          <img class="max-w-[100%] h-auto" src="./src/resources/img/bg-dots.svg" alt="dot line separation" />
+          <button class="button--primary button--primary m-6">Add & Install the extension</button>
+        </article>
+      </div>
+    </section>
+
+
+
+    <section class="md:max-w-[40vw] text-center mt-0 mx-auto mb-[15vh] max-w-[80vw]">
+      <h1>Frequently Asked Questions</h1>
+      <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+      <details class="group border-t-[1px] border-b-[1px] border-(--color-terciary)">
+        <summary>
+          <h2 class="my-[1.3rem] mx-0">What is bookmark?</h2>
+          <img class="group-open:rotate-z-[180deg] group-open:filter-(--filter-arrow) rotate-z-[0deg] duration-[0.3s] w-[18px] h-[12px] my-auto mx-0" src="./src/resources/img/icon-arrow.svg" alt="details open icon" />
+        </summary>
+        <p class="text-left">Bookmark is a browser extension which allows you to easily manage your bookmarks. The extension provides simple utilities including but not limited to: searching through your bookmarks, categorizing them into collections, sharing bookmarks and much more.</p>
+      </details>
+      <details class="group border-b-[1px] border-(--color-terciary)">
+        <summary>
+          <h2 class="my-[1.3rem] mx-0">How can I request a new browser?</h2>
+          <img class="group-open:rotate-z-[180deg] group-open:filter-(--filter-arrow) rotate-z-[0deg] duration-[0.3s] w-[18px] h-[12px] my-auto mx-0" src="./src/resources/img/icon-arrow.svg" alt="details open icon" />
+        </summary>
+        <p class="text-left">We conduct frequent polls through our newsletter if you wish to voice your opinion on which browsers should be prioritized. We will almost always choose to work on the browsers that have the most demand.</p>
+      </details>
+      <details class="group border-b-[1px] border-(--color-terciary)">
+        <summary>
+          <h2 class="my-[1.3rem] mx-0">Is there a mobile app?</h2>
+          <img class="group-open:rotate-z-[180deg] group-open:filter-(--filter-arrow) rotate-z-[0deg] duration-[0.3s] w-[18px] h-[12px] my-auto mx-0" src="./src/resources/img/icon-arrow.svg" alt="details open icon" />
+        </summary>
+        <p class="text-left">Currently there are no plans for developing a mobile app. However, if there is enough demand for it, we're definitely willing to develop one for you!</p>
+      </details>
+      <details class="group border-b-[1px] border-(--color-terciary)">
+        <summary>
+          <h2 class="my-[1.3rem] mx-0">What about other Chromium browsers?</h2>
+          <img class="group-open:rotate-z-[180deg] group-open:filter-(--filter-arrow) rotate-z-[0deg] duration-[0.3s] w-[18px] h-[12px] my-auto mx-0" src="./src/resources/img/icon-arrow.svg" alt="details open icon" />
+        </summary>
+        <p class="text-left">We're hard at work in developing compatible extensions for other chromium browsers such as Microsoft Edge and Brave.</p>
+      </details>
+      <button class="button--primary mt-[5vw]">More info</button>
+    </section>
+
+
+
+    <section id="contact" class="md:py-[10vw] md:px-[32vw] w-full my-0 mx-auto py-[10vw] px-(--main-left-margin) flex flex-col text-center bg-(--color-primary) text-(--color-background)">
+      <h2 class="md:w-[91%] mt-auto mx-auto mb-[1vh] ml-auto tracking-[0.3rem]">35,000+ ALREADY JOINED</h2>
+      <h1>Stay up-to-date with what we're doing</h1>
+      <form id="contactForm" class="md:flex-row flex flex-col" novalidate>
+        <div class="email__feedback bg-(--color-danger) rounded-(--border-radius) w-full group valid [&.valid]:block [&.valid]:bg-[inherit]">
+          <input class="email h-[42px] text-(--color-foreground) bg-(--color-background) focus:b-0 border-0 rounded-(--border-radius) p-[1rem] bg-none w-full valid:bg-none invalid:bg-[url('./src/resources/img/icon-error.svg')] invalid:bg-size-[20px] invalid:bg-no-repeat invalid:bg-origin-content invalid:bg-right" id="email" name="email" type="email" 
+            required alt="email inout for contact us form" 
+            placeholder="Enter your email address" autocomplete="on" />
+          <div id="invalid-feedback" class="email--invalid group-[.valid]:hidden text-[0.7em] italic text-left m-[2px]">
+            Whoops, make sure it's an email.
+          </div>
+        </div>
+        <button id="contactFormSubmitButton" class="button--danger h-[42px] md:mr-auto md:ml-[2vw] md:mt-0 p-[0px] min-w-[120px] mx-0 mt-[1rem]">Contact Us</button>
+      </form>
+    </section>
+  </main>
+  
+
+
+  
+  <footer class="bg-(--color-secondary) md:h-[100px]">
+    <nav class="h-full">
+      <ul class="md:flex-row md:p-0 flex flex-col my-0 md:mx-[10vw] p-4 gap-8 h-full items-center">
+        <li class="md:w-auto text-center uppercase my-auto mx-0 w-full">
+          <a href="/" class="hover:text-[var(--color-danger)]">
+            <h1 class="text-[1rem] m-0">
+              <img class="navBar__footer--brand mx-auto md:m-[15px] cursor-pointer filter-(--filter-logo) hover:filter-(--filter-logo)" src="./src/resources/img/logo-bookmark.svg" alt="Bookmark logo icon" />
+            </h1>
+          </a>
+        </li>
+        <li class="md:w-auto text-center uppercase my-auto mx-0 w-full"><a href="#features">Features</a></li>
+        <li class="md:w-auto text-center uppercase my-auto mx-0 w-full"><a href="/pricing">Pricing</a></li>
+        <li class="md:w-auto text-center uppercase my-auto mx-0 w-full"><a href="#contact">Contact</a></li>
+          <li class="md:w-auto md:mr-0 md:ml-auto text-center uppercase ml-auto mr-[45px] mx-0 w-full">
+            <img class="inline mx-[15px] my-auto cursor-pointer" src="./src/resources/img/icon-facebook.svg" alt="facebook link icon" width="30" height="24" />
+            <img  class="inline mx-[15px] my-auto cursor-pointer" src="./src/resources/img/icon-twitter.svg" alt="Twitter link icon" width="30" height="24" />
+          </li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
