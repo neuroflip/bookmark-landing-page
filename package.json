@@ -2,7 +2,7 @@
   "name": "bookmark-landing-page",
   "version": "0.0.1",
   "description": "Bookmark Landing Page",
-  "main": "index.js",
+  "main": "src/js/main.js",
   "scripts": {
     "build": "vite build",
     "preview": "vite preview",
