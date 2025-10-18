@@ -4,7 +4,7 @@
 
 :root, :host {
   --filter-logo: invert(91%) sepia(92%) saturate(2%) hue-rotate(100deg) brightness(107%) contrast(99%);
-  --filter-arrow: invert(10%) sepia(80%) saturate(200%) hue-rotate(-10deg) brightness(110%) contrast(110%);
+  --filter-red: brightness(0) saturate(100%) invert(50%) sepia(77%) saturate(1882%) hue-rotate(325deg) brightness(99%) contrast(101%);
   --border-radius: 0.5rem;
   --box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
   --main-left-margin: 10vw;
