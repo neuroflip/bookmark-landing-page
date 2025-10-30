@@ -32,7 +32,7 @@ The code is structured as follows:
     - _variables.scss: defines other global variables
     - components/*.scss: code for the individual sections of the page
     - components/mixins/*.scss: mixins used at the components scss. Includes the basic code for buttons
-    - All the components include code or larger and smaller screens. The file with extension *.scss is the basic code for small screens. This files are importing the code for larger screens implemented in *.l.scss. 
+    - All the components include code for larger and smaller screens. The file with extension *.scss is the basic code for small screens. This files are importing the code for larger screens implemented in *.l.scss. 
 
 5. src/resources/img for the image assets from the starte-code
 
@@ -60,7 +60,8 @@ The project is live at: [https://neuroflip.github.io/vanilla-implementation](htt
 2. the css is using flex and grid layouts for the main structure of the html content. The burguer menu is implemented using grid layout to get the links in a second row.
 3. The header is fixed in position for usability
 4. there is only one breakpoint in mediaquery files to distinguish between small and biger screens. Implemented in *.l.scss files inside components.
-5. the contact form has some client validation to check if the format is an email. It is implememnted using a regular expression. The HTML validation is set to novalidate (at the html form tag) to avoid the standard html messages and allow a custom error to be shown.
-6. The original SVG for the logo is tinted using a css filter for the smartphone burguer menu and for the footer. It is done this way to avoid to duplicate svg resources.
-7. The blue background of big images is implemented using the :before pseudo element to avoid a new div container at the markup.
-8. WCAG Accesibility check using [https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh](https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh). There are still some errors and warnings because: form does not have a label for the email input (there is no label at the original design) and some Very low contrast between text and background colors errors (caused by the original design too).
+5. the contact form has some client validation to check if the format is a valid email. It is implememnted using a regular expression.
+6. The HTML form validation is set to novalidate (at the html form tag) to avoid the standard html messages and allow a custom error to be shown.
+7. The original SVG for the logo is tinted using a css filter for the smartphone burguer menu and for the footer. It is done this way to avoid to duplicate svg resources.
+8. The blue background of big images is implemented using the :before pseudo element to avoid a new div container at the markup.
+9. WCAG Accesibility check using [https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh](https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh). There are still some errors and warnings because: form does not have a label for the email input (there is no label at the original design) and some Very low contrast between text and background colors errors (caused by the original design too).
